@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>FilingSentiment</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>finnhub-api</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="finnhub-api::com.hibernix.finnhub.model/FilingSentiment///PointingToDeclaration//1772972070">
+  <div class="breadcrumbs"><a href="../../index.html">finnhub-api</a><span class="delimiter">/</span><a href="../index.html">com.hibernix.finnhub.model</a><span class="delimiter">/</span><span class="current">FilingSentiment</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Filing</span><wbr><span><span>Sentiment</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">FilingSentiment</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>negative<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>positive<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>polarity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>litigious<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>uncertainty<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>constraining<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>modalWeak<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>modalStrong<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>modalModerate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-1742112362%2FConstructors%2F1772972070" anchor-label="FilingSentiment" id="-1742112362%2FConstructors%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-filing-sentiment.html"><span>Filing</span><wbr><span><span>Sentiment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1742112362%2FConstructors%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-filing-sentiment.html"><span class="token function">FilingSentiment</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">negative<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">positive<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">polarity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">litigious<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">uncertainty<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">constraining<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">modalWeak<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">modalStrong<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">modalModerate<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="689691493%2FProperties%2F1772972070" anchor-label="constraining" id="689691493%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="constraining.html"><span><span>constraining</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="689691493%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="689691493%2FProperties%2F1772972070" anchor-label="constraining" id="689691493%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="constraining.html">constraining</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><a data-name="689691493%2FProperties%2F1772972070" anchor-label="constraining" id="689691493%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><p class="paragraph">% of constraining words in the filing.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1217291441%2FProperties%2F1772972070" anchor-label="litigious" id="1217291441%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="litigious.html"><span><span>litigious</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1217291441%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="1217291441%2FProperties%2F1772972070" anchor-label="litigious" id="1217291441%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="litigious.html">litigious</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><a data-name="1217291441%2FProperties%2F1772972070" anchor-label="litigious" id="1217291441%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><p class="paragraph">% of litigious words in the filing.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1384471802%2FProperties%2F1772972070" anchor-label="modalModerate" id="1384471802%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="modal-moderate.html"><span>modal</span><wbr><span><span>Moderate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1384471802%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="1384471802%2FProperties%2F1772972070" anchor-label="modalModerate" id="1384471802%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="modal-moderate.html">modalModerate</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1831024154%2FProperties%2F1772972070" anchor-label="modalStrong" id="-1831024154%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="modal-strong.html"><span>modal</span><wbr><span><span>Strong</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1831024154%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="-1831024154%2FProperties%2F1772972070" anchor-label="modalStrong" id="-1831024154%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="modal-strong.html">modalStrong</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2028562469%2FProperties%2F1772972070" anchor-label="modalWeak" id="2028562469%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="modal-weak.html"><span>modal</span><wbr><span><span>Weak</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2028562469%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="2028562469%2FProperties%2F1772972070" anchor-label="modalWeak" id="2028562469%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="modal-weak.html">modalWeak</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1648372475%2FProperties%2F1772972070" anchor-label="negative" id="1648372475%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="negative.html"><span><span>negative</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1648372475%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="1648372475%2FProperties%2F1772972070" anchor-label="negative" id="1648372475%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="negative.html">negative</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><a data-name="1648372475%2FProperties%2F1772972070" anchor-label="negative" id="1648372475%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><p class="paragraph">% of negative words in the filing.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2014748384%2FProperties%2F1772972070" anchor-label="polarity" id="2014748384%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="polarity.html"><span><span>polarity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2014748384%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="2014748384%2FProperties%2F1772972070" anchor-label="polarity" id="2014748384%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="polarity.html">polarity</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><a data-name="2014748384%2FProperties%2F1772972070" anchor-label="polarity" id="2014748384%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><p class="paragraph">% of polarity words in the filing.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1340022345%2FProperties%2F1772972070" anchor-label="positive" id="-1340022345%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="positive.html"><span><span>positive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1340022345%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="-1340022345%2FProperties%2F1772972070" anchor-label="positive" id="-1340022345%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="positive.html">positive</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><a data-name="-1340022345%2FProperties%2F1772972070" anchor-label="positive" id="-1340022345%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><p class="paragraph">% of positive words in the filing.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1931327644%2FProperties%2F1772972070" anchor-label="uncertainty" id="1931327644%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="uncertainty.html"><span><span>uncertainty</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1931327644%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="1931327644%2FProperties%2F1772972070" anchor-label="uncertainty" id="1931327644%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="uncertainty.html">uncertainty</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><a data-name="1931327644%2FProperties%2F1772972070" anchor-label="uncertainty" id="1931327644%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><p class="paragraph">% of uncertainty words in the filing.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+

@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CompanyNews</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>finnhub-api</span>            </a>    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="finnhub-api::com.hibernix.finnhub.model/CompanyNews///PointingToDeclaration//1772972070">
+  <div class="breadcrumbs"><a href="../../index.html">finnhub-api</a><span class="delimiter">/</span><a href="../index.html">com.hibernix.finnhub.model</a><span class="delimiter">/</span><span class="current">CompanyNews</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Company</span><wbr><span><span>News</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlinx.serialization/Serializable///PointingToDeclaration/"><span class="token annotation builtin">Serializable</span></span></div></div><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">CompanyNews</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>category<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>datetime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>headline<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>image<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>related<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>source<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>summary<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Properties">Properties</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-1975896247%2FConstructors%2F1772972070" anchor-label="CompanyNews" id="-1975896247%2FConstructors%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-company-news.html"><span>Company</span><wbr><span><span>News</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1975896247%2FConstructors%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-company-news.html"><span class="token function">CompanyNews</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">category<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">datetime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">headline<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">image<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">related<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">source<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">summary<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-564193972%2FProperties%2F1772972070" anchor-label="category" id="-564193972%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="category.html"><span><span>category</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-564193972%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="-564193972%2FProperties%2F1772972070" anchor-label="category" id="-564193972%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="category.html">category</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><a data-name="-564193972%2FProperties%2F1772972070" anchor-label="category" id="-564193972%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><p class="paragraph">News category.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1932563089%2FProperties%2F1772972070" anchor-label="datetime" id="-1932563089%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="datetime.html"><span><span>datetime</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1932563089%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="-1932563089%2FProperties%2F1772972070" anchor-label="datetime" id="-1932563089%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="datetime.html">datetime</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><a data-name="-1932563089%2FProperties%2F1772972070" anchor-label="datetime" id="-1932563089%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><p class="paragraph">Published time in UNIX timestamp.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="97370422%2FProperties%2F1772972070" anchor-label="headline" id="97370422%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="headline.html"><span><span>headline</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="97370422%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="97370422%2FProperties%2F1772972070" anchor-label="headline" id="97370422%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="headline.html">headline</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><a data-name="97370422%2FProperties%2F1772972070" anchor-label="headline" id="97370422%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><p class="paragraph">News headline.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="878775695%2FProperties%2F1772972070" anchor-label="id" id="878775695%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="id.html"><span><span>id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="878775695%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="878775695%2FProperties%2F1772972070" anchor-label="id" id="878775695%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="id.html">id</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null</div><div class="brief "><a data-name="878775695%2FProperties%2F1772972070" anchor-label="id" id="878775695%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><p class="paragraph">News ID. This value can be used for <code class="lang-kotlin">``minId``</code> params to get the latest news only. @property image Thumbnail image URL. @property related Related stocks and companies mentioned in the article. @property source News source. @property summary News summary. @property url URL of the original article.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1143434517%2FProperties%2F1772972070" anchor-label="image" id="1143434517%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="image.html"><span><span>image</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1143434517%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="1143434517%2FProperties%2F1772972070" anchor-label="image" id="1143434517%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="image.html">image</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1821246587%2FProperties%2F1772972070" anchor-label="related" id="-1821246587%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="related.html"><span><span>related</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1821246587%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="-1821246587%2FProperties%2F1772972070" anchor-label="related" id="-1821246587%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="related.html">related</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2001142799%2FProperties%2F1772972070" anchor-label="source" id="2001142799%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="source.html"><span><span>source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2001142799%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="2001142799%2FProperties%2F1772972070" anchor-label="source" id="2001142799%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="source.html">source</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1962393494%2FProperties%2F1772972070" anchor-label="summary" id="-1962393494%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="summary.html"><span><span>summary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1962393494%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="-1962393494%2FProperties%2F1772972070" anchor-label="summary" id="-1962393494%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="summary.html">summary</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="342214721%2FProperties%2F1772972070" anchor-label="url" id="342214721%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":finnhub-api:dokkaHtmlPartial/commonMain" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="url.html"><span><span>url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="342214721%2FProperties%2F1772972070"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":finnhub-api:dokkaHtmlPartial/commonMain"><a data-name="342214721%2FProperties%2F1772972070" anchor-label="url" id="342214721%2FProperties%2F1772972070" data-filterable-set=":finnhub-api:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="url.html">url</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null</div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+

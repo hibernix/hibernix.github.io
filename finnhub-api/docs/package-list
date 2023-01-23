@@ -1,0 +1,10 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:finnhub-api
+com.hibernix.finnhub.api
+com.hibernix.finnhub.model
+com.hibernix.finnhub.utils
+module:finnhub-websocket
+com.hibernix.finnhub.model
+com.hibernix.finnhub.websocket
